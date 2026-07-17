@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float-Ex.</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        float: left;
+        width: 33.33%;
+        padding: 50px;
+      }
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+    </style>
+    <style>
+      nav {
+        display: flex;
+       
+        background-color: #333;
+        width: 90%;
+        margin:50px auto;
+      }
+      h1 {
+        color: #ff0000;
+        margin-left: 100px;
+        line-height:2em;
+      }
+      ul {
+        margin-left: 300px;
+        list-style-type: none;
+      }
+      ul li {
+        float: left;
+      }
+      ul li a {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        padding: 14px 16px;
+        text-align: center;
+      }
+      ul li a:hover {
+        background-color: #111;
+      }
+      .active {
+        background-color: #ff0000;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Float boxes side by side.</h2>
+    <div class="clearfix">
+      <div class="box" style="background-color: #bbb">Some text inside the</div>
+      <div class="box" style="background-color: #ccc">Some text inside the</div>
+      <div class="box" style="background-color: #ddd">Some text inside the</div>
+    </div>
+    <p>This is a footer.</p>
+    <nav>
+      <h1>Logo</h1>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Gellary</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
